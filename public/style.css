@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #d32f2f;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.search-box input {
+    width: 60%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 2px solid #d32f2f;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    background: #d32f2f;
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.search-box button:hover {
+    background: #b71c1c;
+}
+
+.result,
+.saved {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.video-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+}
+
+.video-card p {
+    margin-top: 0.8rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #444;
+}
